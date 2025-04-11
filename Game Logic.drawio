@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.10">
   <diagram name="Car" id="uZsSFM7QWZw-cyeiCpEi">
-    <mxGraphModel dx="1044" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1606" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -139,7 +139,7 @@
             <mxPoint x="580" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-42" value="Color (after delivery" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-42" value="Color (before - after delivery)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="990" y="360" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y5Th7ZMCWnmkvRpqq-5N-1" target="Y5Th7ZMCWnmkvRpqq-5N-42">
@@ -147,6 +147,32 @@
             <mxPoint x="740" y="260" as="sourcePoint" />
             <mxPoint x="790" y="210" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y5Th7ZMCWnmkvRpqq-5N-23" target="Y5Th7ZMCWnmkvRpqq-5N-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="780" as="sourcePoint" />
+            <mxPoint x="1270" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="70" y="760" />
+              <mxPoint x="1160" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y5Th7ZMCWnmkvRpqq-5N-35" target="Y5Th7ZMCWnmkvRpqq-5N-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="610" as="sourcePoint" />
+            <mxPoint x="720" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="740" />
+              <mxPoint x="985" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-46" value="Before delivery" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="480" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-48" value="After delivery" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="480" width="90" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
