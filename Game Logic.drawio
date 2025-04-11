@@ -139,6 +139,15 @@
             <mxPoint x="580" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-42" value="Color (after delivery" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="360" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5Th7ZMCWnmkvRpqq-5N-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y5Th7ZMCWnmkvRpqq-5N-1" target="Y5Th7ZMCWnmkvRpqq-5N-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="260" as="sourcePoint" />
+            <mxPoint x="790" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
