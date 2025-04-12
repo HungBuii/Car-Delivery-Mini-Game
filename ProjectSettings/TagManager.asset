@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Package
+  - Customer
+  - Boost Speed
+  - Slow Speed
+  - End Game
   layers:
   - Default
   - TransparentFX

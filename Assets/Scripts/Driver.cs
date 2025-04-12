@@ -5,15 +5,9 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
+    [SerializeField] public bool delivered;
     [SerializeField] private float steerSpeed = 60f;
     [SerializeField] private float moveSpeed = 10f;
-
-    SpriteRenderer spriteRenderer;
-
-    void Start()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     void Update()
     {
@@ -28,16 +22,24 @@ public class Driver : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Ouch!");
+        moveSpeed -= 2f;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Package")
+        if (collision.tag == "Boost Speed")
         {
-            spriteRenderer.color = collision.GetComponent<SpriteRenderer>().color;
-            Debug.Log("Package " + spriteRenderer.color.ToString() + " collected!");
+            moveSpeed += 20f;
             Destroy(collision.gameObject, 0.5f);
         }
+        if (collision.tag == "Slow Speed")
+        {
+            moveSpeed -= 5f;
+            Destroy(collision.gameObject, 0.5f);
+        }
+        // if (collision.tag == "Customer" && delivered == true)
+        // {
+        //     moveSpeed += 10f;
+        // }
     }
 }
