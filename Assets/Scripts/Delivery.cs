@@ -7,6 +7,7 @@ public class Delivery : MonoBehaviour
     public bool delivered;
     bool hasPackage = false;
     string packageColor;
+    public static int numberOfCustomers = 0;
     SpriteRenderer spriteRenderer;
 
     void Start()
@@ -31,6 +32,7 @@ public class Delivery : MonoBehaviour
             hasPackage = false;
             delivered = false;
             spriteRenderer.color = Color.white;
+            numberOfCustomers++;
             Destroy(collision.gameObject, 0.5f);
         }
     }

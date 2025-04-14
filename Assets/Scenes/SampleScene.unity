@@ -927,6 +927,7 @@ GameObject:
   - component: {fileID: 544029870}
   - component: {fileID: 544029871}
   - component: {fileID: 544029872}
+  - component: {fileID: 544029873}
   m_Layer: 0
   m_Name: End
   m_TagString: End Game
@@ -943,7 +944,7 @@ Transform:
   m_GameObject: {fileID: 544029869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.4, y: -28.7, z: 0.4228514}
+  m_LocalPosition: {x: 31.8, y: -28.7, z: 0.4228514}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1036,6 +1037,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &544029873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544029869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5372cc1fc066f044cbd527ce62994657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &605038500
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,6 +4105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0e99540a41ab14da66f19f79a4f36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delivered: 0
 --- !u!1 &1911280708
 GameObject:
   m_ObjectHideFlags: 0
