@@ -9,6 +9,13 @@ public class Driver : MonoBehaviour
     [SerializeField] private float steerSpeed = 60f;
     [SerializeField] private float moveSpeed = 10f;
 
+    Delivery delivery;
+
+     void Start() 
+    {
+        delivery = GetComponent<Delivery>();
+    }
+
     void Update()
     {
         // Steer the car based on player input
@@ -18,6 +25,8 @@ public class Driver : MonoBehaviour
         // Move the car forward, backward
         float moveAmount = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         transform.Translate(0, moveAmount, 0);
+
+        delivered = delivery.delivered;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -37,9 +46,9 @@ public class Driver : MonoBehaviour
             moveSpeed -= 5f;
             Destroy(collision.gameObject, 0.5f);
         }
-        // if (collision.tag == "Customer" && delivered == true)
-        // {
-        //     moveSpeed += 10f;
-        // }
+        if (collision.tag == "Customer" && delivered == true)
+        {
+            moveSpeed += 10f;
+        }
     }
 }
